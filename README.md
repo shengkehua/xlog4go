@@ -1,5 +1,5 @@
 # xlog4go
- advanced [log4go](https://github.com/skoo87/log4go)
+ another [log4go](https://github.com/skoo87/log4go)
 
 ## Features
 * json conf file
