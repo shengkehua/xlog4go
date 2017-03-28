@@ -152,10 +152,8 @@ func (l *Logger) deliverRecordToWriter(level int, format string, args ...interfa
 
 	// format time
 	now := time.Now()
-	if now.Unix() != l.lastTime {
-		l.lastTime = now.Unix()
-		l.lastTimeStr = now.Format(l.layout)
-	}
+	l.lastTime = now.Unix()
+	l.lastTimeStr = now.Format(l.layout)
 
 	r := recordPool.Get().(*Record)
 	r.info = inf
